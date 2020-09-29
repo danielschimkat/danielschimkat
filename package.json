@@ -51,6 +51,7 @@
     },
     "dependencies": {
         "faker": "^5.1.0",
-        "gulp-browserify": "^0.5.1"
+        "gulp-browserify": "^0.5.1",
+        "typed.js": "^2.0.11"
     }
 }
