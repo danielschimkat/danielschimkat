@@ -15,57 +15,150 @@ html
     box-sizing: border-box
 
 body 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $second
-    font-size: 10px
+    font-size: 5px
     font-family: 'Roboto'
+    min-height: 200%
 
+    #logosvg
+        position: fixed
+        top: 50%
+        left: 50%
+        width: 15rem
+        height: 15rem
+        transform: translate(-50%, -50%)
 
-.wrap
-    display: flex
-    flex-flow: column
-    justify-content: center
-    align-items: center
-    width: 100%
+        .cls-1
+            stroke: $prime
+            stroke-linecap: round
+            stroke-linejoin: round
+            stroke-width: 0.4rem
+            fill: transparent
+            transition: fill 250ms
+.container
+  position: fixed
+  width: 5rem
+  height: 5rem
+  top: 85%
+  left: 50%
+  transform: translate(-50%, -15%)
+
+.chevron
+  position: fixed
+  width: 66px
+  height: 16px
+  opacity: 0
+  transform: scale3d(0.5, 0.5, 0.5)
+  animation: move 3s ease-out infinite
+
+  &:first-child
+    animation: move 3s ease-out 1s infinite
+
+  &:nth-child(2)
+    animation: move 3s ease-out 2s infinite
+
+  &:before, &:after
+    content: ' '
+    position: absolute
+    top: 0
     height: 100%
+    width: 51%
+    background: #fff
 
-.headline
-    position: relative
-    width: 70%
-    max-width: 45rem
-    color: #ffffff
-    font-family: 'Roboto', sans-serif
+  &:before
+    left: 0
+    transform: skew(0deg, 30deg)
 
-    .small
-            color: $prime
-            font-size: 2.8rem
-            font-weight: 700
-            text-transform: uppercase
-            line-height: 1.1em
-    .normal
-            font-size: 2.8rem
-            font-weight: 700
-            text-transform: uppercase
-            line-height: 1.1em
-    .typed-animation
-                color: $prime
-    &::after
-            display: block
-            content: ""
-            background-color: white
-            width: 4rem
-            height: 0.5rem
-            position: absolute
-            left: -2.5rem
-            bottom: -2rem
-    &::before
-            display: block
-            content: ""
-            background-color: white
-            width: 0.5rem
-            height: 4rem
-            position: absolute
-            left: -2.5rem
-            bottom: -2rem
+  &:after
+    right: 0
+    width: 50%
+    transform: skew(0deg, -30deg)
+
+@keyframes move
+  25%
+    opacity: 1
+
+  33%
+    opacity: 1
+    transform: translateY(30px)
+
+  67%
+    opacity: 1
+    transform: translateY(50px)
+
+  100%
+    opacity: 0
+    transform: translateY(80px) scale3d(0.5, 0.5, 0.5)
+
+// .text
+//   display: block
+//   margin-top: 75px
+//   margin-left: -30px
+//   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif
+//   font-size: 12px
+//   color: #fff
+//   text-transform: uppercase
+//   white-space: nowrap
+//   opacity: .25
+//   animation: pulse 2s linear alternate infinite
+
+// @keyframes pulse
+//   to
+//     opacity: 1
+
+
+//TODO: Textanimation wieder einbauen
+//      und Pfeile verschwinden lassen sobald 20% der höhe gescrollt wurden.
+
+// .wrap
+//     display: flex
+//     flex-flow: column
+//     justify-content: center
+//     align-items: center
+//     width: 100%
+//     height: 100%
+
+// .headline
+//     position: relative
+//     width: 70%
+//     max-width: 45rem
+//     color: #ffffff
+//     font-family: 'Roboto', sans-serif
+
+//     .small
+//             color: $prime
+//             font-size: 2.8rem
+//             font-weight: 700
+//             text-transform: uppercase
+//             line-height: 1.1em
+//     .normal
+//             font-size: 2.8rem
+//             font-weight: 700
+//             text-transform: uppercase
+//             line-height: 1.1em
+//     .typed-animation
+//                 color: $prime
+//     &::after
+//             display: block
+//             content: ""
+//             background-color: white
+//             width: 4rem
+//             height: 0.5rem
+//             position: absolute
+//             left: -2.5rem
+//             bottom: -2rem
+//     &::before
+//             display: block
+//             content: ""
+//             background-color: white
+//             width: 0.5rem
+//             height: 4rem
+//             position: absolute
+//             left: -2.5rem
+//             bottom: -2rem
 
 // ###############################################
 // ###############################################
