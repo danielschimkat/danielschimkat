@@ -22,9 +22,9 @@
 <img align="left" alt="C" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/c/c.png" />
 <img align="left" alt="Tessy" width="26px" src="https://www.razorcat.com/assets/images/8/tessy-logo-neu-ab120b18.png" />
 <img align="left" alt="Python" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" />
-
 <br />
 <br />
-
+<br />
+<img align="left" alt="danielschimkat's Github Stats" src="https://github-readme-stats.vercel.app/api?username=danielschimkat&show_icons=true&hide_border=true" />
 
 [website]: http://danielschimkat.de
