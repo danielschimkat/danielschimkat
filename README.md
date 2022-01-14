@@ -1,13 +1,12 @@
 ### Hi there, Im Daniel
 
-## I'm an Engineer and Tinkerer
+### I'm an Engineer and Tinkerer
 - I'm currently woking on a personal [Website][website]
 - I'm looking to learn more about Webdevelopment and Home Automation
 - 2022 Goals:
   + Hack a Ikea VINDRIKTNING to fit my needs (temperature, humidity, CO2 and VOC)
   + Finish a basic personal website and only use HTML, CSS and JS
 
-<br />
 
 ### Languages and Tools:
 
